@@ -1,0 +1,5 @@
+## About
+Fetch is a python script to automate download direct HTTP/FTP links via axel/wget or any other cli download accelerators.
+
+## Install
+Make install

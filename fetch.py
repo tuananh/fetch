@@ -59,7 +59,9 @@ if os.path.exists(sys.argv[1]): # if from file
     log("Importing links from file %s" % myFile)
     print "\n"
     fileReader = file(myFile,"r")
-    urls = fileReader.readlines()
+    for line in fileReader:
+        foo = line.strip('\n')
+        urls.append(foo)
     fileReader.close()
     # add links to urls
 elif sys.argv[1].startswith("http://"): # if from URL(s)
